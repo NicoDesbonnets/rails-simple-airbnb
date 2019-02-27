@@ -1,0 +1,32 @@
+<div class="flat-box">
+  <div class="details-cards">
+    <div class="details-card">
+      <p><%= @flat.name %></p>
+      <p><%= @flat.address %></p>
+    </div>
+    <div class="details-card">
+      <p><%= @flat.description %></p>
+    </div>
+    <div class="details-card">
+      <p><%= @flat.price_per_night %> € </p>
+      <p><%= @flat.number_of_guests  %> guest</p>
+    </div>
+  </div>
+
+  <div class="flat-show-card">
+    <h5>Book this place!</h5>
+    <form action="">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">From:</span>
+        <input type="text" class="form-control" placeholder="12/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mt-2">
+        <span class="input-group-addon" id="basic-addon1">To:</span>
+        <input type="text" class="form-control" placeholder="18/10/2017" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+    </form>
+  </div>
+</div>
+
+<%= link_to "Back to all flats", flats_path, class: "btn btn-primary margintop10" %>
